@@ -41,3 +41,25 @@ variable "aws_region" {
 variable "my_ip" {
   type = string
 }
+
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t3.micro"
+}
+
+variable "desired_capacity" {
+  type    = number
+  default = 2
+}
+
+variable "min_size" {
+  type    = number
+  default = 2
+}
+
+variable "max_size" {
+  type    = number
+  default = 4
+}
