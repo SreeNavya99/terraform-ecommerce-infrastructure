@@ -32,3 +32,8 @@ output "alb_dns_name" {
   description = "Application Load Balancer DNS name"
   value       = module.alb.alb_dns_name
 }
+
+output "db_endpoint" {
+  description = "RDS endpoint"
+  value       = module.database.db_instance_endpoint
+}

@@ -66,3 +66,19 @@ module "alb" {
 
   autoscaling_group_name = module.compute.autoscaling_group_name
 }
+
+module "database" {
+  source = "./modules/database"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  private_subnet_ids = [
+    module.networking.private_subnet_1a_id,
+    module.networking.private_subnet_1c_id
+  ]
+
+  rds_security_group_id = module.security.rds_security_group_id
+
+  db_password = var.db_password
+}

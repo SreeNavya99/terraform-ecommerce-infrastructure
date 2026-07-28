@@ -63,3 +63,9 @@ variable "max_size" {
   type    = number
   default = 4
 }
+
+variable "db_password" {
+  description = "Database password"
+  type        = string
+  sensitive   = true
+}

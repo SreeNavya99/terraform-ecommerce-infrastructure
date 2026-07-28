@@ -1,4 +1,4 @@
-
+db_password  = "admin123"
 project_name = "ecommerce"
 environment  = "dev"
 
