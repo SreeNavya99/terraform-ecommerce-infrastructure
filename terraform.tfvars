@@ -13,3 +13,5 @@ private_subnet_1c_cidr = "10.0.4.0/24"
 
 az1 = "ap-northeast-1a"
 az2 = "ap-northeast-1c"
+
+my_ip = "43.206.253.30/32"

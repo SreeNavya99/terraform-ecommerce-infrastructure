@@ -38,3 +38,6 @@ variable "az2" {
 variable "aws_region" {
   type = string
 }
+variable "my_ip" {
+  type = string
+}
