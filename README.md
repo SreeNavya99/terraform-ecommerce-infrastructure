@@ -147,3 +147,4 @@ This project follows Terraform backend best practices:
 ## Author
 
 Created as part of a production-style Terraform and AWS DevOps learning project.
+
