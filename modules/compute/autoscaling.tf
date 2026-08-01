@@ -18,7 +18,7 @@ resource "aws_autoscaling_group" "app" {
 
     id = aws_launch_template.app.id
 
-    version = "$Latest"
+    version = aws_launch_template.app.latest_version
   }
   instance_refresh {
       strategy = "Rolling"
